@@ -26,8 +26,6 @@ function getRating(arr, dir, pos, pref) {
 
     const side = bisect(arr, dir, pos, pref);
 
-    // return side;
-
     return getRating(side, dir, ++pos, pref);
 }
 
@@ -39,14 +37,8 @@ readFile("./input.txt", "utf8")
     let o2 = getRating(lines, true, 0, "1");
     let co2 = getRating(lines, false, 0, "0");
 
-    console.log({ o2, co2 });
-
-    // epsilon = gamma.map(dig => (dig < 0 ? 1 : 0)).join("");
-    // gamma = gamma.map(dig => (dig > 0 ? 1 : 0)).join("");
-
     o2 = parseInt(o2, 2);
     co2 = parseInt(co2, 2);
-
 
     console.log({ o2, co2, pr : o2 * co2 });
 });
