@@ -8,7 +8,7 @@ module.exports = class Board {
 
         this.hits = [];
 
-        console.log(this.numbers);
+        // console.log(this.numbers);
     }
 
     static arrSum(arr) {
