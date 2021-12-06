@@ -37,9 +37,9 @@ readFile("./04/input.txt", "utf8")
                 .map(el => parseInt(el, 10))
         )
         .forEach(([ x1, y1, x2, y2 ]) => {
-            if (x1 !== x2 && y1 !== y2) {
-                return;
-            }
+            // if (x1 !== x2 && y1 !== y2) {
+            //     return;
+            // }
 
             const deltaX = Math.abs(x1 - x2);
             const deltaY = Math.abs(y1 - y2);
